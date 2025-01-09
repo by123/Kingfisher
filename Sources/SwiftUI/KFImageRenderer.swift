@@ -43,7 +43,7 @@ struct KFImageRenderer<HoldingView> : View where HoldingView: KFImageHoldingView
         }
         
         return ZStack {
-            renderedImage().opacity(binder.loaded ? 1.0 : 1.0)
+            renderedImage()
             if binder.loadedImage == nil {
                 ZStack {
                     if let placeholder = context.placeholder {
